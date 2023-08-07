@@ -1,0 +1,108 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root {
+    --dark-bg: rgba(31, 5, 30, 0.985);
+    --med-bg: rgb(54, 6, 56);
+    --text-color: rgb(124, 100, 100);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+  }
+
+  .header {
+    flex: 1;
+    color: var(--text-color);
+    padding: 2rem;
+  }
+
+  .main-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buffy-ball {
+    max-width: 45rem;
+    overflow: hidden;
+ }
+
+  .question {
+    flex: 1;
+    color: var(--text-color);
+    padding: 2rem;
+  }
+
+  .question p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .question-box {
+    background-color: var(--text-color);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 5px;
+  }
+
+  .question-box:hover {
+    cursor: pointer;
+  }
+
+  .response-page {
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+  }
+
+  .gifs {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .not-active {
+    display: none;
+  }
